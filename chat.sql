@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 20, 2019 at 04:42 PM
+-- Generation Time: Jun 07, 2019 at 05:45 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -46,7 +46,12 @@ INSERT INTO `chat_table` (`c_id`, `name`, `msg`, `date`, `c_key`) VALUES
 (5, 'emon', 'nothing,yet...', '06:54:40pm(20-01-19)', 'emon(nothing,yet...)'),
 (6, 'Rahul Joy', 'i think we need a trip to refresh our mind,,,', '08:09:28pm(20-01-19)', 'Rahul Joy(i think we need a trip to refresh our mind,,,)'),
 (7, 'emon', 'okk,lets do it,,,', '08:11:45pm(20-01-19)', 'emon(okk,lets do it,,,)'),
-(8, 'Rahul Joy', 'i will take the responsibilities of this tour,,,<br>\r\ni hope it will be a great tour for us,,', '08:16:38pm(20-01-19)', 'Rahul Joy(i will take the responsibilities of this tour,,,<br>\r\ni hope it will be a great tour for us,,)');
+(8, 'Rahul Joy', 'i will take the responsibilities of this tour,,,<br>\r\ni hope it will be a great tour for us,,', '08:16:38pm(20-01-19)', 'Rahul Joy(i will take the responsibilities of this tour,,,<br>\r\ni hope it will be a great tour for us,,)'),
+(9, 'emon', 'okkðŸ‘ðŸ‘ðŸ‘', '10:40:07pm(04-06-19)', 'emon(okkðŸ‘ðŸ‘ðŸ‘)'),
+(10, 'anik', 'hey guys, i am inðŸ‘ŠðŸ¼ðŸ‘ŠðŸ¼ðŸ‘ŠðŸ¼', '10:42:20pm(04-06-19)', 'anik(hey guys, i am inðŸ‘ŠðŸ¼ðŸ‘ŠðŸ¼ðŸ‘ŠðŸ¼)'),
+(11, 'emon', 'goodðŸ‘ŒðŸ‘ŒðŸ‘Œ', '10:42:54pm(04-06-19)', 'emon(goodðŸ‘ŒðŸ‘ŒðŸ‘Œ)'),
+(12, 'rahul ', 'i will inform you asapðŸ’ŒðŸ’ŒðŸ’Œ', '10:47:33pm(04-06-19)', 'rahul (i will inform you asapðŸ’ŒðŸ’ŒðŸ’Œ)'),
+(14, 'joy', 'hiðŸ˜ƒ', '06:34:56pm(05-06-19)', 'joy(hiðŸ˜ƒ)');
 
 --
 -- Indexes for dumped tables
@@ -67,7 +72,7 @@ ALTER TABLE `chat_table`
 -- AUTO_INCREMENT for table `chat_table`
 --
 ALTER TABLE `chat_table`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

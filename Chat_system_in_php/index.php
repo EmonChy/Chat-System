@@ -3,10 +3,7 @@ include './functn.php';
 if(isset($_POST['submit'])){
     $name = $_POST['u_name'];
     $msg = $_POST['msg'];
-    $user_insert = user_insert($name,$msg);
-    
-  
-    
+    $user_insert = user_insert($name,$msg);    
 }
 
 ?>
@@ -15,6 +12,9 @@ if(isset($_POST['submit'])){
         <meta charset="UTF-8">
         <title>Chat system in php</title>
         <link rel="stylesheet" href="css/bootstrap.css"/>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.1/emojionearea.min.js"></script>
         <script>
         function ajax(){
            var req = new XMLHttpRequest;
@@ -64,7 +64,7 @@ if(isset($_POST['submit'])){
                                         </tr>
                                         <tr>
                                             <td><b style="color: brown ;font-family:sans-serif;">Message:</b></td>
-                                            <td><textarea class="form-control" name="msg" rows="4"  placeholder="enter your message" required=""></textarea></td>
+                                            <td><textarea class="form-control" name="msg" id="emoji" rows="4"  placeholder="enter your message" required=""></textarea></td>
                                    
                                     </tr>
                                     <tr>
@@ -102,22 +102,18 @@ if(isset($_POST['submit'])){
                                         <?php
                                         echo '<hr>';
                                     }
-                                 ?>   
-                                    
-                                </div>
-                                
-                            
-                                
+                                 ?>                                       
+                                </div>                                
                             </div>
-                        </div>
-                        
-                        
+                        </div>                        
                     </div>
-                </div>
-                
-                
-            </div>
-            
+                </div>                
+            </div>            
         </div>
     </body>
+    <script type="text/javascript">
+        $("#emoji").emojioneArea({
+           pickerPosition:"bottom"
+        });
+    </script>
 </html>
